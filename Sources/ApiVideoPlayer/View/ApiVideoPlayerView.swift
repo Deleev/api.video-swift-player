@@ -4,7 +4,7 @@ import UIKit
 
 @available(tvOS 10.0, *)
 public class ApiVideoPlayerView: UIView {
-    private let playerLayer = AVPlayerLayer()
+    public let playerLayer = AVPlayerLayer()
     private let videoPlayerView = UIView()
     private var vodControlsView: VodControlsView?
     private var playerController: ApiVideoPlayerController
