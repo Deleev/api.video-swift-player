@@ -152,7 +152,7 @@ class VodControlsView: UIView, UIGestureRecognizerDelegate {
             action: #selector(self.playbackSliderValueChanged),
             for: .valueChanged
         )
-        self.vodControlSlider.tintColor = UIColor.orange.withAlphaComponent(0.7)
+        // self.vodControlSlider.tintColor = UIColor.orange.withAlphaComponent(0.7)
         self.vodControlSlider.thumbTintColor = UIColor.white
 
         // Timer Label
