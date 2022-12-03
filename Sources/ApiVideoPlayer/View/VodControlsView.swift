@@ -10,14 +10,11 @@ class VodControlsView: UIView, UIGestureRecognizerDelegate {
     private var timeObserver: Any?
     public var viewController: UIViewController? {
         didSet {
-            /*
-            TODO Expose prop
             if self.viewController != nil {
                 self.fullScreenButton.isHidden = false
             } else {
                 self.fullScreenButton.isHidden = true
             }
-            */
         }
     }
 
@@ -265,7 +262,7 @@ class VodControlsView: UIView, UIGestureRecognizerDelegate {
         self.vodControlGoForward15Button.isHidden = false
         self.vodControlGoBackward15Button.isHidden = false
         self.vodControlSliderView.isHidden = false
-        self.fullScreenButton.isHidden = false
+        // self.fullScreenButton.isHidden = false
     }
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
