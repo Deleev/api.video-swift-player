@@ -10,11 +10,14 @@ class VodControlsView: UIView, UIGestureRecognizerDelegate {
     private var timeObserver: Any?
     public var viewController: UIViewController? {
         didSet {
+            /*
+            TODO Expose prop
             if self.viewController != nil {
                 self.fullScreenButton.isHidden = false
             } else {
                 self.fullScreenButton.isHidden = true
             }
+            */
         }
     }
 
