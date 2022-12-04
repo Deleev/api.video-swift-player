@@ -84,7 +84,8 @@ public class ApiVideoPlayerController: NSObject {
                 do {
                     self.playerManifest = try JSONDecoder().decode(PlayerManifest.self, from: data)
                     self.setUpAnalytics(url: self.playerManifest.video.src)
-                    try self.setUpPlayer(self.playerManifest.video.src)
+                    self.retrySetUpPlayerUrlWithMp4()
+                    // try self.setUpPlayer(self.playerManifest.video.src)
                     completion(nil)
                 } catch {
                     completion(error)
