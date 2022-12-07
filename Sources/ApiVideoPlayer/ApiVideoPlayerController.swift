@@ -116,6 +116,8 @@ public class ApiVideoPlayerController: NSObject {
                 event.didPrepare?()
             }
             let item = AVPlayerItem(url: url)
+            item.preferredMaximumResolution = CGSize(width: 1080, height: 1920)
+            self.avPlayer.automaticallyWaitsToMinimizeStalling = true
             self.avPlayer.currentItem?.removeObserver(self, forKeyPath: "status", context: nil)
             self.avPlayer.replaceCurrentItem(with: item)
             item.addObserver(self, forKeyPath: "status", options: .new, context: nil)
