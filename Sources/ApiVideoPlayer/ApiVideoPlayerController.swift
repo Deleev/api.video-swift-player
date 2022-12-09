@@ -84,8 +84,8 @@ public class ApiVideoPlayerController: NSObject {
                 do {
                     self.playerManifest = try JSONDecoder().decode(PlayerManifest.self, from: data)
                     self.setUpAnalytics(url: self.playerManifest.video.src)
-                    self.retrySetUpPlayerUrlWithMp4()
-                    // try self.setUpPlayer(self.playerManifest.video.src)
+                    let encodedVideoSource = self.playerManifest.video.src.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+                    try self.setUpPlayer("https://api.deleev.com/convert_api_video_manifest?url=\(encodedVideoSource ?? "")")
                     completion(nil)
                 } catch {
                     completion(error)
@@ -116,8 +116,6 @@ public class ApiVideoPlayerController: NSObject {
                 event.didPrepare?()
             }
             let item = AVPlayerItem(url: url)
-            item.preferredMaximumResolution = CGSize(width: 1080, height: 1920)
-            self.avPlayer.automaticallyWaitsToMinimizeStalling = true
             self.avPlayer.currentItem?.removeObserver(self, forKeyPath: "status", context: nil)
             self.avPlayer.replaceCurrentItem(with: item)
             item.addObserver(self, forKeyPath: "status", options: .new, context: nil)
