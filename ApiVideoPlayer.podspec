@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ApiVideoPlayer'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'The official Swift player for api.video'
 
   s.homepage         = 'https://github.com/Deleev/api.video-swift-player'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.{swift, plist}'
   s.resources = 'Sources/**/*.{storyboard,xib,xcassets,json,png}'
 
-  s.dependency "ApiVideoPlayerAnalytics", "1.0.4"
+  s.dependency "ApiVideoPlayerAnalytics", "1.0.6"
 end
