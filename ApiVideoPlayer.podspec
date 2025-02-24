@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ApiVideoPlayer'
-  s.version          = '1.0.10'
+  s.version          = '1.3.0'
   s.summary          = 'The official Swift player for api.video'
 
   s.homepage         = 'https://github.com/Deleev/api.video-swift-player'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Ecosystem' => 'ecosystem@api.video' }
   s.source           = { :git => 'https://github.com/Deleev/api.video-swift-player.git', :tag => "v" + s.version.to_s }
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
 
   s.source_files = 'Sources/**/*.{swift, plist}'

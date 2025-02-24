@@ -1,5 +1,34 @@
 # Changelog
 All changes to this project will be documented in this file.
+
+## [1.3.0] - 2024-07-26
+- Use Analytics endpoint v2
+- Create a unique pbxproj
+
+## [1.2.0] - 2024-03-01
+- Add support for private live stream
+- Add an API to set a custom `AVPlayerViewController`
+
+## [1.1.4] - 2023-10-09
+- Fix analytics when currentTime < 0
+- Examples: Add default videoId
+
+## [1.1.3] - 2023-06-15
+- Make player available for iOS 11 and above
+- PlayerError send custom message to LocalizedError
+
+## [1.1.2] - 2023-06-05
+- Make method addDelegate(s) and removeDelegate(s) public
+
+## [1.1.1] - 2023-05-10
+- Add speedrate selector
+- Add remote control on lockscreen
+
+## [1.1.0] - 2023-03-15
+- Add private vod videos
+- Add live feature
+- Change callback to delegate for UIKit 
+
 ## [1.0.5] - 2022-11-23
 - Add didReady event
 - Use completionhandler in seek method to get the result of the seek, before doing any other action.

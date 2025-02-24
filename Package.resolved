@@ -1,12 +1,39 @@
 {
   "pins" : [
     {
-      "identity" : "api.video-ios-player-analytics",
+      "identity" : "alamofire",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apivideo/api.video-ios-player-analytics.git",
+      "location" : "https://github.com/Alamofire/Alamofire",
       "state" : {
-        "revision" : "c34d58405161c8055ee14b33af7a06ff4e55d00a",
-        "version" : "1.0.4"
+        "revision" : "b2fa556e4e48cbf06cf8c63def138c98f4b811fa",
+        "version" : "5.8.0"
+      }
+    },
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable",
+      "state" : {
+        "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
+        "version" : "0.6.7"
+      }
+    },
+    {
+      "identity" : "api.video-swift-client",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apivideo/api.video-swift-client",
+      "state" : {
+        "revision" : "ebd726b792dfddad484bc95af92a8cc6e27471ad",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "api.video-swift-player-analytics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apivideo/api.video-swift-player-analytics",
+      "state" : {
+        "revision" : "fe35c711a9667a010d921c39364c30ffe8b02e32",
+        "version" : "2.0.0"
       }
     }
   ],
