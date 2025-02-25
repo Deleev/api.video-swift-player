@@ -85,9 +85,7 @@ class TimeSliderView: UIStackView {
             action: #selector(playbackSliderValueChanged),
             for: .valueChanged
         )
-        playbackSlider.tintColor = UIColor.orange.withAlphaComponent(0.7)
         playbackSlider.thumbTintColor = UIColor.white
-
     }
 
     @objc

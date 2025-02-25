@@ -12,15 +12,7 @@ class ControlsView: UIView {
     private var subtitleView: SelectableListView<SubtitleLanguage>?
     private var speedometerView: SelectableListView<Float>?
 
-    public var viewController: UIViewController? {
-        didSet {
-            if viewController != nil {
-                fullScreenButton.isHidden = false
-            } else {
-                fullScreenButton.isHidden = true
-            }
-        }
-    }
+    public var viewController: UIViewController?
 
     private let tapView: UIView = {
         let view = UIView()
