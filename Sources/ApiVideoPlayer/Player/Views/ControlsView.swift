@@ -239,7 +239,6 @@ class ControlsView: UIView {
         forward15Button.isHidden = isHidden
         backward15Button.isHidden = isHidden
         actionBarView.isHidden = isHidden
-        fullScreenButton.isHidden = isHidden
         if isHidden {
             removeSubtitleView()
             removeSpeedometerView()

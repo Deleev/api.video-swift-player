@@ -50,6 +50,7 @@ class ActionBarView: UIView {
         btn.tintColor = .white
         btn.setImage(name: "speedometer")
         btn.sizeToFit()
+        btn.isHidden = true
         return btn
     }()
 
